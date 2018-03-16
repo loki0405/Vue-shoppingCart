@@ -1,0 +1,43 @@
+let vm=new Vue({
+	el:'.container',
+	data(){
+		return{
+			limtNum:3,
+			addressList:[],
+			cuurentIndex:0,
+			shippingmethod:1
+		}
+	},
+	mounted:function(){
+		this.$nextTick(function(){
+			this.creatData();
+		});
+	},
+	computed:{
+		filterAdd:function(){
+			return this.addressList.slice(0,this.limtNum);
+		}
+	},
+	methods:{
+		creatData(){
+			axios.get('data/address.json').then((res)=>{
+				//console.log(res.data.result);
+				if(status=1){
+					this.addressList=res.data.result;
+				}				
+			})
+		},
+		setDefault(addressId){
+			this.addressList.forEach((address,index)=>{
+				if(address.addressId==addressId){
+					address.isDefault=true;
+				}else{
+					address.isDefault=false;
+				}
+			});
+		},
+		addData(){
+			
+		}
+	}
+})

@@ -1,0 +1,41 @@
+{
+  "status":1,
+  "result":{
+    "totalMoney":109,
+    "list":[
+      {
+        "productId":"600100002115",
+        "productName":"CONVERSE Chuck Taylor",
+        "productPrice":499,
+        "productQuantity":1,
+        "productImage":"img/01.jpg",
+        "parts":[]
+      },
+      {
+        "productId":"600100002120",
+        "productName":"春季新款女式风衣",
+        "productPrice":899,
+        "productQuantity":1,
+        "productImage":"img/02.jpg",
+        "parts":[]
+      },
+      {
+        "productId":"600100002117",
+        "productName":"格兰菲迪威士忌",
+        "productPrice":199,
+        "productQuantity":1,
+        "productImage":"img/timg.jpg",
+        "parts":[]
+      },
+      {
+        "productId":"600100002117",
+        "productName":"AIR JORDAN 5代",
+        "productPrice":1499,
+        "productQuantity":1,
+        "productImage":"img/goods-03.jpg",
+        "parts":[]
+        }
+    ]
+  },
+  "message":""
+}
